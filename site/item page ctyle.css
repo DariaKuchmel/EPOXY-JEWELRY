@@ -1,0 +1,772 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Lusitana:wght@400;700&display=swap');
+  .wrapper {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+  } 
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: #FDF9F4;
+    font-family: "Literata", serif;
+    margin: 0 auto;
+  }
+
+  body.dark-theme {
+    background: #1E3A81;
+  }
+
+  body.dark-theme a {
+    color: #FDF9F4;
+  }
+
+  .btn-toggle{
+    border: none;
+    padding: 0;
+    background-color: #FDF9F4;
+  }
+
+ .sun_theme{
+    display: none;
+ }
+
+ body.dark-theme .moon_theme {
+    display: none;
+ }
+
+ body.dark-theme .sun_theme{
+  display:block;
+  padding-block: 0;
+  background-color: #1E3A81;
+  path{
+    fill: #FDF9F4;
+  }
+  } 
+
+     body.dark-theme .nav-toggle{
+      background-color: #1E3A81;
+      path{
+        stroke: #FDF9F4;
+      }
+      
+     } 
+     .nav-toggle{
+      border: none;
+      padding: 0;
+      background-color: #FDF9F4;
+     }
+
+
+  a {
+    text-decoration: none;
+   }
+   
+   
+   
+   .header {
+    width: 81.94%;
+    margin: 0 auto; 
+    position: relative;
+    border-bottom: 1.5px solid #5680E9;
+    align-items: center;
+   }
+
+   body.dark-theme .header {
+    border-bottom: 1.5px solid #FDF9F4;
+   }
+   
+   .logo {
+   color: #5680E9;
+   font-family: "Lusitana", serif;
+   font-size: 2.222vw;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 1;
+   line-height: 140%;
+   letter-spacing: 1.6px; 
+   text-align: center;
+   }
+
+   .logo:hover{
+    text-shadow: #74bce0 1px 0 5px;
+   }
+   
+   .menu_list {
+    display: flex; /* Отображаем элементы списка в строку */
+    list-style: none;/* Убираем стандартные маркеры (чёрные точки) */
+    justify-content: space-between; 
+    align-items: center;
+    padding-inline: 0px;
+    width: 56.61%;
+   } 
+
+   /* Стилизуем ссылки в меню */
+   .menu_list-link {
+    font-size: 1.389vw; /* Уменьшаем размер шрифта */
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 28px */
+    letter-spacing: 1px;
+    color: #5680E9; /* Устанавливаем цвет ссылок */
+    cursor: pointer; /* Задаём изменение вида курсора при наведении на пункты меню */
+    transition: all 0.3s; /* Добавляем плавное изменение стилей при наведении */
+   }
+   
+   /* Добавляем стилизацию ссылок в меню при наведении курсора */
+   .menu_list-link:hover {
+    color: #74bce0; /* Задаём изменение цвета ссылок при наведении курсора */
+   }
+   .menu{
+    display: flex; /* Отображаем элементы списка в строку */
+    list-style: none;/* Убираем стандартные маркеры (чёрные точки) */
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 15px;
+   }
+   
+   .favourite_bag{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    column-gap: 23px;
+   }
+   .favourite_bag svg:hover{
+    box-shadow: #74bce0 1px 0 5px;
+   }
+
+   body.dark-theme .heart {
+    path
+    {fill:#FDF9F4;}
+  }
+  body.dark-theme .bag {
+    path
+    {stroke:#FDF9F4;}
+  }
+
+   /* кнопка переключения меню, появляющаяся при ширине 768px */
+.nav-button {
+  display: none;
+  cursor: pointer;
+}
+
+ .main {
+   width: 81.94%; 
+  margin: 0 auto; /* Центрируем контейнер по горизонтали */
+ }
+
+ .main_info{
+  display: flex;
+  margin-top: 100px;
+ }
+
+ .info_image{
+  margin-left: 6.78%;
+ display: flex;
+ flex-direction: column;
+ row-gap: 45px;
+ width: 50.17%;
+ }
+ 
+ .bag_favourite{
+ display: flex;
+ width: 59.797%;
+ justify-content: space-between; 
+ }
+
+ @media (max-width: 1120px){
+ 
+  .bag_favourite{
+    width: 276px;
+    }
+ }
+
+ .main_image{
+  border: 1.5px solid #5680E9;
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 43%;
+  height: auto;
+ }
+
+ .name{
+  color: #000;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 512px;
+  margin-block: 0;
+ }
+
+ @media (max-width: 1230px){
+ 
+  .name{
+    width: 492px;
+    }
+ }
+
+ .price{
+  color: #000;
+  font-size: 2.222vw;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  width: 124px;
+  margin-block: 0;
+ }
+
+ .button_bag{
+  font-family: "Literata", serif;
+  height: 50px;
+  width: 204px;
+  background-color: #5680E9;
+  color: #ffffff;
+  border-radius: 10px;
+  border: none;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: normal;
+  text-align: center;
+ }
+ .button_bag:hover{
+  height: 52px;
+  width: 206px;
+  margin-bottom: -2px;
+  box-shadow: 4px 4px 8px 0px rgba(88, 88, 217, 0.8);
+ }
+
+ .info_image img{
+  width: 50px;
+  height: 50px;
+ }
+
+ .bag_favourite svg:hover, .favourite svg:hover{
+    path
+     {fill:#FDF9F4;}
+    circle
+     {fill: #5680E9;}    
+ }
+
+ body.dark-theme .name, body.dark-theme .price, body.dark-theme .list-description, body.dark-theme .description,body.dark-theme .see_also {
+  color: #FDF9F4;
+}
+ .info_image{
+  height: 100%;
+ }
+
+ .list-description{
+  list-style: disc;
+  color: #000;
+  font-size: 1.389vw;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-inline-start: 16px;
+  width: 430px;
+  margin-block: 0;
+ }
+
+ .list-description li::marker{
+  font-size: 12px;
+ }
+
+.description{
+  color: #000;
+text-align: justify;
+font-size: 1.389vw;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+margin-top: 60px;
+margin-bottom: 101px;
+text-indent: 36px;
+}
+
+.description p{
+margin-block: 0;
+}
+
+ .see_also{
+  color: #000;
+  font-size: 2.500vw;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-top: 0;
+  margin-bottom: 60px;
+ }
+
+ .item-container {
+  position: relative;
+  width: 100%;
+  height:auto; 
+  transition: 1s; /* Время эффекта */
+}
+.item-container:hover {
+  transform: scale(1.1); /* Увеличиваем масштаб */
+ }
+
+.image_item {
+  height: auto; 
+ width: 100%;
+ }
+
+.favourite {
+  position:absolute;
+  top: 10px;
+  right: 10px;
+  height: 40px;
+  width: 40px;
+}
+.info_item{
+  color: #000;
+  font-size: 1.389vw;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-top: 13px;
+  text-align: center;
+}
+.info_item2{
+  color: #000;
+  font-size: 1.389vw;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.info_item:hover,.info_item2:hover{
+  color:#5680E9;
+}
+
+.popular_item{
+  display: flex;
+  flex-direction: column;
+  width: 30.5%;
+  row-gap: 0px;  
+}
+
+.list_popular_items{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer {
+  margin: 0 auto; 
+  background-color: #5680E9;
+  align-items: center;
+  margin-top: 100px;
+ }
+
+ body.dark-theme .footer{
+  background-color: #1E3A81;
+  border-top: 1.5px solid #FDF9F4;
+ }
+  
+ /* Стилизуем логотип */
+footer .logo {
+ color:#FDF9F4;
+ margin-block: 95px;
+ }
+ 
+ /* Стилизуем списки меню */
+ .footer_column {
+  display: flex; 
+  flex-direction: column;
+  row-gap: 13px;
+  list-style: none;/* Убираем стандартные маркеры (чёрные точки) */
+  justify-content: space-between; 
+  align-items: left;
+  padding-inline: 0px;
+  margin-block: 85px;
+ } 
+
+ /* Стилизуем ссылки в меню */
+ footer .menu_list-link {
+  font-size: 1.389vw; /* Уменьшаем размер шрифта */
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 28px */
+  letter-spacing: 1px;
+  color:#FDF9F4; /* Устанавливаем цвет ссылок */
+  cursor: pointer; /* Задаём изменение вида курсора при наведении на пункты меню */
+  transition: all 0.3s; /* Добавляем плавное изменение стилей при наведении */
+ }
+ 
+ /* Добавляем стилизацию ссылок в меню при наведении курсора */
+ .menu_list-link:hover {
+  color: #74bce0; /* Задаём изменение цвета ссылок при наведении курсора */
+ }
+ .footer_menu{
+  display: flex; /* Отображаем элементы списка в строку */
+  list-style: none;/* Убираем стандартные маркеры (чёрные точки) */
+  justify-content: space-between;
+  align-items: center;
+  width: 81.94%;
+  margin: 0 auto; 
+ }
+@media (max-width: 1300px){
+  .info_image{
+   row-gap: 38px;
+   }
+ }
+ @media (max-width: 1200px){
+  .info_image{
+   row-gap: 36px;
+   }
+ }
+ @media (max-width: 1080px){
+   .logo {
+    font-size: 24px;
+    }
+  footer .menu_list-link {
+    font-size: 15px; 
+    }
+  .menu_list{
+    width:50%;
+  }
+  .favourite_bag{
+    column-gap: 10px;
+  }
+  .menu{
+    margin-block: 11px;
+  }
+  
+ }
+ @media (max-width: 1000px){
+  .info_image{
+   row-gap: 34px;
+   }
+ }
+ @media (max-width: 960px){
+  .see_also{
+     
+    font-size: 24px;
+  
+   }
+ }
+ @media (max-width: 930px){
+  .info_image{
+   row-gap: 32px;
+   }
+   .name{
+     font-size: 24px;
+     width: 300px;
+    }
+   
+    .price{
+     font-size: 24px;
+    }
+
+    .list-description{
+    
+       font-size: 14px;
+      }
+      .description{
+    
+        font-size: 14px;
+        text-indent: 16px;
+       }
+       .see_also{
+     
+        font-size: 24px;
+      
+       }
+       .info_item{
+       
+        font-size: 14px;
+       
+      }
+      .info_item2{
+       
+        font-size: 14px;
+       margin-top: 10px;
+      }
+      .main, .header, .footer_menu {
+        width: 86.98%; 
+      }
+ }
+ @media (max-width: 768px){
+  .info_image{
+   row-gap: 30px;
+   width: 45.36%;
+   }
+   .description{
+  
+  margin-bottom: 80px;
+  }
+  .info_item{
+    margin-top: 6px;
+  }
+  .popular_item{
+    width: 30.5%;
+  }
+  footer .logo {
+    margin-block: 69px;
+    }
+    
+    /* Стилизуем списки меню */
+    .footer_column {
+     margin-block: 58px;
+    } 
+ }
+
+ @media (max-width: 800px){
+  .info_image{
+    margin-left: 25px;
+   }
+ }
+
+ @media (max-width: 965px){
+  .main_image{
+    width: 340px;
+    height: 328px;
+   }
+  
+ }
+
+ @media (max-width: 767px)/*  and (min-width: 380px) */{
+ 
+  .main{
+    width: 89.47%;
+  }
+  .header{
+    width: 89.47%;
+  }
+  .main_info{
+    flex-direction: column;
+    align-items: center;
+    row-gap: 16px;
+    width: 340px;
+   }
+  .info_image{
+   width: 100%;
+   margin-left: 16px;
+   }
+   
+   .bag_favourite{
+   display: flex;
+   width: 298px;
+   justify-content: space-between; 
+   }
+  
+   .name{
+    font-size: 24px;
+    text-indent: 7px;
+   }
+  
+   .price{
+    font-size: 24px;
+    width: 124px;
+    text-indent: 7px;
+   }
+  
+   .list-description{
+    font-size: 14px;
+    
+   }
+ 
+  .description{
+  font-size: 14px;
+  margin-top: 33px;
+  text-indent: 16px;
+  }
+ 
+   /* Стилизуем логотип */
+  footer .logo {
+   font-size: 32px;
+   margin-top: 45px;
+   margin-bottom: 30px;
+   }
+   
+   /* Стилизуем списки меню */
+   .footer_column {
+margin-top: 0px;
+    margin-bottom: 45px;
+    font-size: 14px;
+
+   } 
+  
+   /* Стилизуем ссылки в меню */
+   footer .menu_list-link {
+    font-size: 14px; /* Уменьшаем размер шрифта */
+    
+   }
+   
+   /* Добавляем стилизацию ссылок в меню при наведении курсора */
+   .menu_list-link:hover {
+    color: #74bce0; /* Задаём изменение цвета ссылок при наведении курсора */
+   }
+   .footer_menu{
+    width: 89.47%;
+    display: grid;
+    grid-template-areas: "post-1 post-1 "  
+                         "post-2 post-3 ";
+    }
+    .footer_menu .logo{
+      grid-area: post-1;
+    }
+    .footer_column:nth-child(2){
+      grid-area: post-2;
+    } 
+    .footer_column:nth-child(1){
+      grid-area: post-3;
+    } 
+
+.see_also{
+  /* margin-left: 16px; */
+  margin-block-start: 0px;
+}
+  .list_popular_items {
+      /* margin-left: 16px; */
+     display: flex;
+      column-gap: 25px;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+      width: 100%;
+      height: 312px;
+      -webkit-overflow-scrolling: touch; /* для плавной прокрутки на мобильных устройствах */
+    }
+  .popular_item {
+      flex: none;
+      scroll-snap-align: start;
+      /* width: 340px; */
+   
+      text-align: center;
+    }
+    .info_item{
+      font-size: 14px;
+      margin-top: 5px;
+      
+    }
+    .info_item2{
+      font-size: 14px;
+     margin-top: 10px;
+    }
+    
+   
+    .popular_item{
+      width: 260px;
+     height: 250px;
+      
+    }  
+   }
+
+   @media (max-width: 768px){
+
+ .menu_list /* :not(:first-child,:last-child) */ {
+  display: none;
+}
+.nav-button {
+  display: block;
+  z-index: 9;
+  border: none;
+  background-color: #FDF9F4;
+  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
+ /*  position: fixed; */
+}
+.nav-button svg {
+  display: block;
+  z-index: 9;
+  border: none;
+  background-color: #FDF9F4;
+  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
+ /*  position: fixed; */
+}
+
+body.dark-theme .nav-button svg{
+  background-color: #1E3A81;
+  path{
+    stroke: #FDF9F4;
+  }
+ }
+
+nav.open .menu_list{
+  
+  position: fixed;
+  top: 90px;
+  right: 5.26%;
+  background-color:#ffffff;
+  border: 1.5px solid #5680E9;
+  z-index: 1;
+  margin-block: 0;
+  display: flex;
+  flex-direction: column;
+ 
+  width: 225px;
+  height: 225px;
+  justify-content:space-around;
+}
+body.dark-theme nav.open .menu_list{
+  background-color: #5680E9;
+  border: 1.5px solid #FDF9F4;
+ }
+nav.open .menu_list-link {
+  font-size: 18px;
+}
+
+ 
+   }
+   @media (max-width: 500px){
+    nav.open .menu_list{
+      top: 70px;
+    }
+    header .logo{
+      font-size: 20px;
+     }
+     .menu{
+      margin-block: 7px;
+     }
+     .btn-toggle svg{
+      width: 24px;
+      height: 24px;
+      path{stroke-width: 2px;
+      }
+     }
+     .bag{
+      height: 40px;
+      width: 40px;
+     }
+     .heart{
+      height: 24px;
+      width: 28px;
+     }
+     .nav-button svg{
+      width: 20px;
+      height: 15px;
+      path{stroke-width: 2.5px;
+     }
+     
+   }}
+
+   @media (min-width: 1441px){
+/* .wrapper{
+  width: 1440px;
+} */
+   .logo{
+    font-size: 32px;
+   }
+   .menu_list-link,footer .menu_list-link, .list-description, .description, .info_item, .info_item2{
+    font-size: 20px;
+   }
+   .main_image{
+    width: 508px;
+   }
+  .name, .price{
+    font-size: 32px;
+  }
+  .see_also{
+    font-size: 36px;
+  }
+   }
